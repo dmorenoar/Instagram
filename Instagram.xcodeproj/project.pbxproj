@@ -14,6 +14,14 @@
 		FA2858ED21D51F0A00467CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2858EB21D51F0A00467CA4 /* LaunchScreen.storyboard */; };
 		FA2858F821D51F0A00467CA4 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2858F721D51F0A00467CA4 /* InstagramTests.swift */; };
 		FA28590321D51F0A00467CA4 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28590221D51F0A00467CA4 /* InstagramUITests.swift */; };
+		FA28591221D51F3100467CA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28591121D51F3100467CA4 /* User.swift */; };
+		FA28591621D5206E00467CA4 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28591521D5206E00467CA4 /* Tools.swift */; };
+		FA28591C21D520D300467CA4 /* ViewControllerFollowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28591B21D520D300467CA4 /* ViewControllerFollowing.swift */; };
+		FA28591F21D5214A00467CA4 /* UITabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28591E21D5214A00467CA4 /* UITabBarCustom.swift */; };
+		FA28592221D5295700467CA4 /* TableViewCellFollowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28592121D5295700467CA4 /* TableViewCellFollowing.swift */; };
+		FAB1C56C21D7D54900D81F95 /* CollectionViewCellProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C56B21D7D54900D81F95 /* CollectionViewCellProfile.swift */; };
+		FAB1C56E21D7D5EF00D81F95 /* ViewControllerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C56D21D7D5EF00D81F95 /* ViewControllerProfile.swift */; };
+		FAB1C57021D7DEFF00D81F95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1C56F21D7DEFF00D81F95 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		FA2858FE21D51F0A00467CA4 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA28590221D51F0A00467CA4 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		FA28590421D51F0A00467CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA28591121D51F3100467CA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA28591521D5206E00467CA4 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		FA28591B21D520D300467CA4 /* ViewControllerFollowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFollowing.swift; sourceTree = "<group>"; };
+		FA28591E21D5214A00467CA4 /* UITabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarCustom.swift; sourceTree = "<group>"; };
+		FA28592121D5295700467CA4 /* TableViewCellFollowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellFollowing.swift; sourceTree = "<group>"; };
+		FAB1C56B21D7D54900D81F95 /* CollectionViewCellProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCellProfile.swift; path = Instagram/Profile/CollectionViewCellProfile.swift; sourceTree = SOURCE_ROOT; };
+		FAB1C56D21D7D5EF00D81F95 /* ViewControllerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProfile.swift; sourceTree = "<group>"; };
+		FAB1C56F21D7DEFF00D81F95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,14 @@
 		FA2858E121D51F0500467CA4 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				FA28592021D5293800467CA4 /* Shared */,
+				FA28591D21D5211600467CA4 /* TabBar */,
+				FA28591A21D520BB00467CA4 /* Following */,
+				FA28591921D520AC00467CA4 /* Liked */,
+				FA28591821D520A300467CA4 /* Profile */,
+				FA28591721D5209C00467CA4 /* Home */,
+				FA28591421D5206200467CA4 /* Tools */,
+				FA28591021D51F2100467CA4 /* Models */,
 				FA2858E221D51F0500467CA4 /* AppDelegate.swift */,
 				FA2858E421D51F0500467CA4 /* ViewController.swift */,
 				FA2858E621D51F0500467CA4 /* Main.storyboard */,
@@ -123,6 +147,70 @@
 				FA28590421D51F0A00467CA4 /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		FA28591021D51F2100467CA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA28591121D51F3100467CA4 /* User.swift */,
+				FAB1C56F21D7DEFF00D81F95 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA28591421D5206200467CA4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FA28591521D5206E00467CA4 /* Tools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FA28591721D5209C00467CA4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA28591821D520A300467CA4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1C56B21D7D54900D81F95 /* CollectionViewCellProfile.swift */,
+				FAB1C56D21D7D5EF00D81F95 /* ViewControllerProfile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FA28591921D520AC00467CA4 /* Liked */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Liked;
+			sourceTree = "<group>";
+		};
+		FA28591A21D520BB00467CA4 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				FA28591B21D520D300467CA4 /* ViewControllerFollowing.swift */,
+				FA28592121D5295700467CA4 /* TableViewCellFollowing.swift */,
+			);
+			path = Following;
+			sourceTree = "<group>";
+		};
+		FA28591D21D5211600467CA4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA28591E21D5214A00467CA4 /* UITabBarCustom.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		FA28592021D5293800467CA4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB1C56E21D7D5EF00D81F95 /* ViewControllerProfile.swift in Sources */,
+				FA28591F21D5214A00467CA4 /* UITabBarCustom.swift in Sources */,
 				FA2858E521D51F0500467CA4 /* ViewController.swift in Sources */,
+				FAB1C56C21D7D54900D81F95 /* CollectionViewCellProfile.swift in Sources */,
+				FA28591C21D520D300467CA4 /* ViewControllerFollowing.swift in Sources */,
 				FA2858E321D51F0500467CA4 /* AppDelegate.swift in Sources */,
+				FA28592221D5295700467CA4 /* TableViewCellFollowing.swift in Sources */,
+				FA28591221D51F3100467CA4 /* User.swift in Sources */,
+				FA28591621D5206E00467CA4 /* Tools.swift in Sources */,
+				FAB1C57021D7DEFF00D81F95 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
